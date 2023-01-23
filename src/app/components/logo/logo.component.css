@@ -1,0 +1,13 @@
+.logo__img {
+  width: 25%;
+}
+.logo__caption {
+  font-size: 1.424rem;
+  font-weight: 600;
+  color: var(--clr-neutral-min);
+}
+
+.logo__caption--sub {
+  display: block;
+  color: var(--clr-primary-dark);
+}
