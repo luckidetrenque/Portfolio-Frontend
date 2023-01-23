@@ -1,1 +1,119 @@
-/* You can add global styles to this file, and also import other style files */
+/* GIT ADD */
+/* ---------- Fonts ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Raleway:wght@300;400&display=swap');
+
+/* ---------- Custom Properties (Variables) ---------- */
+:root {
+  --ff-base: 'Raleway', sans-serif;
+  --ff-heading: 'Poppins', sans-serif;
+  --line-height: 1.5;
+  --clr-primary: #737373;
+  --clr-primary-light: #BFBFBF;
+  --clr-primary-lighter: #D9D9D9;
+  --clr-primary-dark: #404040;
+  --clr-primary-darker: #0D0D0D;
+  /* --clr-secondary: #5A74A5; */
+  --clr-accent: #99BFA4;
+  --clr-neutral-min: white;
+  --clr-neutral-max: black;
+  /* --clr-neutral: #666666;
+  --clr-neutral-min: white;
+  --clr-neutral-light: #999999;
+  --clr-neutral-dark: #333333;
+  --clr-neutral-max: black; */
+  --clr-bg: #ededed;
+}
+
+/* ---------- Base ---------- */
+html {
+  box-sizing: border-box;
+  font-size: 14px;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--ff-base);
+  /* font-size: 1rem; */
+  font-weight: normal;
+  line-height: var(--line-height);
+  background-color: var(--clr-bg);
+  color: var(--clr-neutral-dark);
+  display: grid;
+  grid-template-areas:
+    "header"
+    "aside"
+    "main"
+    "footer";
+  width: 100%;
+  min-width: 320px;
+  min-height: 100%;
+  margin: auto;
+  position: relative;
+  /* solo para posicionar obsolutamente el menu */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ---------- Typography ---------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-heading);
+  font-weight: bold;
+  line-height: var(--line-height);
+  margin-bottom: 24px;
+}
+
+h1 {
+  font-size: 1.802rem;
+}
+
+h2 {
+  font-size: 1.602rem;
+}
+
+h3 {
+  font-size: 1.424rem;
+}
+
+h4 {
+  font-size: 1.266rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+a {
+  font-weight: inherit;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+small {
+  font-size: 0.889rem;
+}
